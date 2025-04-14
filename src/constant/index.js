@@ -592,3 +592,133 @@ export const portfolioList = [
     ]
   }
 ]
+
+export const pricingData = [
+  {
+    id: 1,
+    title: "Logo Design",
+    packages: [
+      {
+        title: "Logo Plus Package",
+        price: 238.00,
+        discounted_Price: 119.00,
+        text: "Suitable for potential super-startups and brand revamps for companies.",
+        features: [
+          "12 Original Logo Concepts",
+          "4 Dedicated Logo Designer (Industry Specific)",
+          "Unlimited Revisions",
+          "Stationery Design (Business Card, Letterhead, Envelope)",
+          "Email Signature Design",
+          "With Grey Scale Format",
+          "Free Icon Design",
+          "Formats: JPEG, PSD, EPS, AI, PNG, TIFF, SVG",
+          "24 - 48 Hours Turn around time",
+        ],
+        more_features: [
+          "100% Satisfaction",
+          "100% Ownership Rights",
+          "Money Back Guarantee",
+          "Dedicated Account Manager"
+        ]
+      },
+      {
+        title: "Logo Plus Package",
+        price: 238.00,
+        discounted_Price: 119.00,
+        text: "Suitable for potential super-startups and brand revamps for companies.",
+        features: [
+          "12 Original Logo Concepts",
+          "4 Dedicated Logo Designer (Industry Specific)",
+          "Unlimited Revisions",
+          "Stationery Design (Business Card, Letterhead, Envelope)",
+          "Email Signature Design",
+          "With Grey Scale Format",
+          "Free Icon Design",
+          "Formats: JPEG, PSD, EPS, AI, PNG, TIFF, SVG",
+          "24 - 48 Hours Turn around time",
+        ],
+        more_features: [
+          "100% Satisfaction",
+          "100% Ownership Rights",
+          "Money Back Guarantee",
+          "Dedicated Account Manager"
+        ]
+      },
+      {
+        title: "Logo Plus Package",
+        price: 238.00,
+        discounted_Price: 119.00,
+        text: "Suitable for potential super-startups and brand revamps for companies.",
+        features: [
+          "12 Original Logo Concepts",
+          "4 Dedicated Logo Designer (Industry Specific)",
+          "Unlimited Revisions",
+          "Stationery Design (Business Card, Letterhead, Envelope)",
+          "Email Signature Design",
+          "With Grey Scale Format",
+          "Free Icon Design",
+          "Formats: JPEG, PSD, EPS, AI, PNG, TIFF, SVG",
+          "24 - 48 Hours Turn around time",
+        ],
+        more_features: [
+          "100% Satisfaction",
+          "100% Ownership Rights",
+          "Money Back Guarantee",
+          "Dedicated Account Manager"
+        ]
+      },
+      {
+        title: "Logo Plus Package",
+        price: 238.00,
+        discounted_Price: 119.00,
+        text: "Suitable for potential super-startups and brand revamps for companies.",
+        features: [
+          "12 Original Logo Concepts",
+          "4 Dedicated Logo Designer (Industry Specific)",
+          "Unlimited Revisions",
+          "Stationery Design (Business Card, Letterhead, Envelope)",
+          "Email Signature Design",
+          "With Grey Scale Format",
+          "Free Icon Design",
+          "Formats: JPEG, PSD, EPS, AI, PNG, TIFF, SVG",
+          "24 - 48 Hours Turn around time",
+        ],
+        more_features: [
+          "100% Satisfaction",
+          "100% Ownership Rights",
+          "Money Back Guarantee",
+          "Dedicated Account Manager"
+        ]
+      },
+    ]
+  },
+]
+
+export const allInOnePkg = {
+  subtitle: "All in one",
+  title: "COMBO",
+  price: 2999.00,
+  discounted_Price: 999.00,
+  discount_waiver: "20%",
+  text: " Ultimate Value for Start-ups and Businesses",
+  features: [
+    " Unlimited Custom Logo Design Concepts",
+    "6 Dedicated Designers",
+    " 3 Pages Website",
+    "Mobile Responsive",
+    "Icon Design",
+    "Business Card, Letterhead, Envelope",
+    "MS Word Letterhead",
+    "5 Stock Photos + 3 Banner Designs",
+    "Complete W3C Certified HTML",
+    "Complete Deployment",
+    "Facebook Page Design",
+    "All Final File Formats"
+  ],
+  more_features: [
+    "100% Satisfaction",
+    "100% Ownership Rights *",
+    "Money Back Guarantee",
+    "Dedicated Account Manager",
+  ]
+}

@@ -1,29 +1,25 @@
 import gsap from "gsap";
 import React, { useEffect, useRef, useState } from "react";
-import { portfolioList } from "../../constant";
+import { sprite } from "../../assets";
+import { number, portfolioList } from "../../constant";
+import Button from "../ui/Button";
 import FilterNav from "../ui/FilterNav";
 import SecHeader from "../ui/SecHeader";
 
 const Portfolio = () => {
   const [selectedServiceId, setSelectedServiceId] = useState(1);
-  const [filterType, setFilterType] = useState("categoryWise"); // "categoryWise" or "industryWise"
+  const [filterType, setFilterType] = useState("categoryWise");
   const [selectedSubItemId, setSelectedSubItemId] = useState(null);
   const detailRef = useRef(null);
 
-  // Find the selected service from portfolioList
   const selectedService = portfolioList.find(
     (item) => item.id === selectedServiceId
   );
-
-  // Determine if this service has both categoryWise and industryWise
   const hasFilters =
     selectedService &&
     selectedService.categoryWise &&
     selectedService.industryWise;
 
-  // Determine subItems based on the available data.
-  // If the service has category/industry filters, use the subItems of the current filterType.
-  // Otherwise, check if it has a subItems property directly.
   let subItems = [];
   if (selectedService) {
     if (hasFilters) {
@@ -32,8 +28,6 @@ const Portfolio = () => {
       subItems = selectedService.subItems;
     }
   }
-
-  // Auto-select the first sub-item if available and none is selected
   useEffect(() => {
     if (subItems && subItems.length > 0) {
       setSelectedSubItemId(subItems[0].id);
@@ -42,7 +36,6 @@ const Portfolio = () => {
     }
   }, [selectedServiceId, filterType, subItems]);
 
-  // Animate the projects area whenever the selected service changes
   useEffect(() => {
     if (detailRef.current) {
       gsap.fromTo(
@@ -53,9 +46,6 @@ const Portfolio = () => {
     }
   }, [selectedServiceId]);
 
-  // Determine the projects to display:
-  // - If the service has a direct projects array, use that.
-  // - Otherwise, if subItems exist, find the selected sub-item and use its projects.
   let projectsToShow = [];
   if (selectedService) {
     if (selectedService.projects) {
@@ -166,6 +156,48 @@ const Portfolio = () => {
                     <p>No projects to display.</p>
                   )}
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="py-10 border-b border-gray-300">
+        <div className="container">
+          <div className="flex flex-wrap -mx-[15px]">
+            <div className="w-full px-[15px]">
+              <div className="text-center">
+                <ul className="flex items-center justify-center gap-9">
+                  <li className="relative">
+                    <span
+                      className={`absolute w-[21px] h-[59px] right-0 -top-1/5 bg-[0_0]`}
+                      style={{ backgroundImage: `url(${sprite})` }}
+                    ></span>
+                    <a
+                      href={number[1]}
+                      className="pr-[30px] text-[22px] font-bold text-gray-900"
+                    >
+                      <span className="block text-sm text-right leading-[0.9] font-medium">
+                        Call Us Now
+                      </span>
+                      {number[0]}
+                    </a>
+                  </li>
+                  <li className="relative">
+                    <Button btn2 children="Request a Quote" />
+                  </li>
+                  <li className="relative">
+                    <span
+                      className="absolute bg-[-33px_-7px] w-[66px] h-[52px]"
+                      style={{ backgroundImage: `url(${sprite})` }}
+                    ></span>
+                    <button className="pl-[75px] text-[22px] font-bold text-gray-900">
+                      <span className="block text-sm text-left leading-[0.9] font-medium">
+                        24/7 Support
+                      </span>
+                      Live Chat
+                    </button>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>

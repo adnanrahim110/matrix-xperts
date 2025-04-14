@@ -1,6 +1,9 @@
 import { banner_element_1, banner_home, logobar1 } from "../assets";
+import ComboPkgs from "../components/layouts/ComboPkgs";
 import Cta from "../components/layouts/Cta";
+import Cta2 from "../components/layouts/Cta2";
 import Portfolio from "../components/layouts/Portfolio";
+import Pricing from "../components/layouts/Pricing";
 import ServiceCards from "../components/layouts/ServiceCards";
 import Button from "../components/ui/Button";
 
@@ -52,6 +55,9 @@ const Home = () => {
       <ServiceCards />
       <Cta />
       <Portfolio />
+      <Pricing />
+      <Cta2 />
+      <ComboPkgs />
     </>
   );
 };
