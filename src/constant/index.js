@@ -1,7 +1,51 @@
-import { icons_dm_1, icons_dm_2, icons_dm_3, icons_dm_4, icons_dm_5, icons_dm_6, icons_ld_1, icons_ld_2, icons_ld_3, icons_ld_4, icons_ld_5, icons_ld_6, icons_ld_7, icons_ld_8, icons_ma_1, icons_ma_2, icons_ma_3, icons_ma_4, icons_ma_5, icons_ma_6, icons_mc_1, icons_mc_2, icons_mc_3, icons_mc_4, icons_mc_5, icons_mc_6, icons_va_1, icons_va_2, icons_va_3, icons_va_4, icons_va_5, icons_va_6, icons_wd_1, icons_wd_2, icons_wd_3, icons_wd_4, icons_wd_5, icons_wd_6, projects_logoDesign_cw_abstract_1, projects_logoDesign_cw_abstract_2, projects_logoDesign_cw_abstract_3, projects_logoDesign_cw_abstract_4 } from "../assets";
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaPinterestP } from "react-icons/fa6";
+import { icons_dm_1, icons_dm_2, icons_dm_3, icons_dm_4, icons_dm_5, icons_dm_6, icons_ld_1, icons_ld_2, icons_ld_3, icons_ld_4, icons_ld_5, icons_ld_6, icons_ld_7, icons_ld_8, icons_ma_1, icons_ma_2, icons_ma_3, icons_ma_4, icons_ma_5, icons_ma_6, icons_mc_1, icons_mc_2, icons_mc_3, icons_mc_4, icons_mc_5, icons_mc_6, icons_va_1, icons_va_2, icons_va_3, icons_va_4, icons_va_5, icons_va_6, icons_wd_1, icons_wd_2, icons_wd_3, icons_wd_4, icons_wd_5, icons_wd_6, projects_logoDesign_cw_abstract_1, projects_logoDesign_cw_abstract_2, projects_logoDesign_cw_abstract_3, projects_logoDesign_cw_abstract_4, reviews_1, reviews_2, reviews_3, reviews_4 } from "../assets";
 
 export const brandName = "Logo Aspire";
 export const number = ["(855) 535 - 9320", "tel:8555359320"];
+export const email = ["info@logoaspire.com", "mailto:info@logoaspire.com"];
+
+export const contactDetails = [
+  {
+    title: "Sales: (855) 535 - 9320",
+    url: "tel:8555359320",
+  },
+  {
+    title: "Support: (855) 535 - 9320",
+    url: "tel:8555359320",
+  },
+  {
+    title: "info@logoaspire.com",
+    url: "mailto:info@logoaspire.com",
+  },
+  {
+    title: "5670 Wilshire Blvd, Los Angeles, CA 90036, United States",
+    url: false
+  }
+]
+
+export const socialLinks = [
+  {
+    title: "Facebook",
+    url: "https://www.facebook.com/LogoAspire",
+    icon: FaFacebookF
+  },
+  {
+    title: "LinkedIn",
+    url: "https://linkedin.com/logoaspire",
+    icon: FaLinkedinIn
+  },
+  {
+    title: "Pinterest",
+    url: "https://pinterest.com/logoaspire",
+    icon: FaPinterestP
+  },
+  {
+    title: "Instagram",
+    url: "https://www.instagram.com/logoaspire/",
+    icon: FaInstagram
+  }
+]
 
 export const navigation = [
   {
@@ -80,24 +124,36 @@ export const navigation = [
   },
 ];
 
-export const contactDetails = [
+export const quickLinks = [
   {
-    title: "Sales: (855) 535 - 9320",
-    url: "tel:8555359320",
+    title: "Home",
+    url: "/",
   },
   {
-    title: "Support: (855) 535 - 9320",
-    url: "tel:8555359320",
+    title: "About",
+    url: "/about",
   },
   {
-    title: "info@logoaspire.com",
-    url: "mailto:info@logoaspire.com",
+    title: "Packages",
+    url: "/packages",
   },
   {
-    title: "5670 Wilshire Blvd, Los Angeles, CA 90036, United States",
-    url: false
+    title: "Combo Packages",
+    url: "/combo-packages",
+  },
+  {
+    title: "Portfolio",
+    url: "/portfolio",
+  },
+  {
+    title: "Reviews",
+    url: "/reviews",
+  },
+  {
+    title: "Sitemap",
+    url: "/sitemap",
   }
-]
+];
 
 export const categories = [
   {
@@ -722,3 +778,34 @@ export const allInOnePkg = {
     "Dedicated Account Manager",
   ]
 }
+
+export const testimonials = [
+  {
+    name: "Trina Gill",
+    title: "Senior Publisher",
+    img: reviews_1,
+    stars: 5,
+    comment: "Logo Aspire is a life savior. My business was all set to operate but my website crashed at the last moment. Thanks to the team at Logo Aspire."
+  },
+  {
+    name: "Tyrone Turner",
+    title: "Editor",
+    img: reviews_2,
+    stars: 5,
+    comment: "Worth sharing my experience with Logo Aspire. The team has all the expertise to design a business logo and they also guided me through the process."
+  },
+  {
+    name: "Milton Sims",
+    title: "Brand Manager",
+    img: reviews_3,
+    stars: 5,
+    comment: "Highly appreciated their work and the level of commitment. They worked according to our business needs and their work was flawless."
+  },
+  {
+    name: "Belle Boyd",
+    title: "Senior Content Creator",
+    img: reviews_4,
+    stars: 5,
+    comment: "A loud shout out to the team at Logo Aspire. My mobile application is running smoothly and all my clients are satisfied. This was not possible without their effort."
+  }
+]

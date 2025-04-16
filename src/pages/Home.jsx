@@ -1,10 +1,15 @@
 import { banner_element_1, banner_home, logobar1 } from "../assets";
+import Brands from "../components/layouts/Brands";
+import Brands_2 from "../components/layouts/Brands_2";
 import ComboPkgs from "../components/layouts/ComboPkgs";
 import Cta from "../components/layouts/Cta";
 import Cta2 from "../components/layouts/Cta2";
+import FooterForm from "../components/layouts/FooterForm";
 import Portfolio from "../components/layouts/Portfolio";
 import Pricing from "../components/layouts/Pricing";
 import ServiceCards from "../components/layouts/ServiceCards";
+import Testimonials from "../components/layouts/Testimonials";
+import WorkWithUs from "../components/layouts/WorkWithUs";
 import Button from "../components/ui/Button";
 
 const Home = () => {
@@ -58,6 +63,11 @@ const Home = () => {
       <Pricing />
       <Cta2 />
       <ComboPkgs />
+      <Brands />
+      <WorkWithUs />
+      <Testimonials />
+      <Brands_2 />
+      <FooterForm />
     </>
   );
 };
