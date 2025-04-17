@@ -103,6 +103,8 @@ export { default as reviews_1 } from './images/reviews/1.png';
 export { default as reviews_2 } from './images/reviews/2.png';
 export { default as reviews_3 } from './images/reviews/3.png';
 export { default as reviews_4 } from './images/reviews/4.png';
+export { default as services_wd_1 } from './images/services/wd/1.webp';
+export { default as services_wd_inner_brand_list } from './images/services/wd/inner-brand-list.webp';
 export { default as sprite } from './images/sprite.webp';
 export { default as tele_icon } from './images/tele_icon.webp';
 export { default as usa } from './images/usa.png';

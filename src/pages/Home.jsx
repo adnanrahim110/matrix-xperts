@@ -1,6 +1,5 @@
 import { banners_element_1, banners_home, logobar1 } from "../assets";
 import Brands from "../components/layouts/Brands";
-import Brands_2 from "../components/layouts/Brands_2";
 import ComboPkgs from "../components/layouts/ComboPkgs";
 import Cta from "../components/layouts/Cta";
 import Cta2 from "../components/layouts/Cta2";
@@ -65,7 +64,6 @@ const Home = () => {
       <Brands />
       <WorkWithUs />
       <Testimonials />
-      <Brands_2 />
     </>
   );
 };

@@ -7,6 +7,7 @@ import { Autoplay, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { testimonials } from "../../constant";
 import SecHeader2 from "../ui/SecHeader2";
+import Brands_2 from "./Brands_2";
 const Testimonials = () => {
   return (
     <>
@@ -64,6 +65,7 @@ const Testimonials = () => {
           </div>
         </div>
       </section>
+      <Brands_2 />
     </>
   );
 };
