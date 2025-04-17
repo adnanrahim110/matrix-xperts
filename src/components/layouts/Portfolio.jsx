@@ -1,12 +1,20 @@
 import gsap from "gsap";
 import React, { useEffect, useRef, useState } from "react";
-import { sprite } from "../../assets";
+import {
+  elements_11,
+  elements_14,
+  elements_15,
+  elements_16,
+  elements_5,
+  sprite,
+} from "../../assets";
 import { number, portfolioList } from "../../constant";
 import Button from "../ui/Button";
+import Elements from "../ui/Elements";
 import FilterNav from "../ui/FilterNav";
 import SecHeader from "../ui/SecHeader";
 
-const Portfolio = () => {
+const Portfolio = ({ elements = false }) => {
   const [selectedServiceId, setSelectedServiceId] = useState(1);
   const [filterType, setFilterType] = useState("categoryWise");
   const [selectedSubItemId, setSelectedSubItemId] = useState(null);
@@ -203,6 +211,24 @@ const Portfolio = () => {
           </div>
         </div>
       </div>
+      {elements && (
+        <>
+          {[
+            { cls: "top-0 right-0 -z-[1]", img: elements_16 },
+            { cls: "top-5 left-[90px] min-xl:-left-10", img: elements_14 },
+            { cls: "left-10 bottom-[50px] max-w-[14%]", img: elements_11 },
+            { cls: "bottom-0 -left-10 -z-[1]", img: elements_15 },
+            { cls: "bottom-16 right-8 -z-[1]", img: elements_5 },
+          ].map((el, idx) => (
+            <Elements
+              key={idx}
+              className={el.cls}
+              img={el.img}
+              animate={idx !== 4 ? false : true}
+            />
+          ))}
+        </>
+      )}
     </section>
   );
 };

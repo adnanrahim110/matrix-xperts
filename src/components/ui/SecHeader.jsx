@@ -18,13 +18,16 @@ const SecHeader = ({
         className={`font-bold text-gray-900 text-4xl capitalize ${
           tClass || ""
         }`}
-      >
-        {title}
-      </h3>
-      <p
-        className={`font-open-sans text-gray-500 text-base m-0 ${pClass || ""}`}
-        dangerouslySetInnerHTML={{ __html: text }}
+        dangerouslySetInnerHTML={{ __html: title }}
       />
+      {text && (
+        <p
+          className={`font-open-sans text-gray-500 text-base m-0 ${
+            pClass || ""
+          }`}
+          dangerouslySetInnerHTML={{ __html: text }}
+        />
+      )}
     </div>
   );
 };

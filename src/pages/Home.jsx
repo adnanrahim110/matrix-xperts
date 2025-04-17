@@ -1,10 +1,9 @@
-import { banner_element_1, banner_home, logobar1 } from "../assets";
+import { banners_element_1, banners_home, logobar1 } from "../assets";
 import Brands from "../components/layouts/Brands";
 import Brands_2 from "../components/layouts/Brands_2";
 import ComboPkgs from "../components/layouts/ComboPkgs";
 import Cta from "../components/layouts/Cta";
 import Cta2 from "../components/layouts/Cta2";
-import FooterForm from "../components/layouts/FooterForm";
 import Portfolio from "../components/layouts/Portfolio";
 import Pricing from "../components/layouts/Pricing";
 import ServiceCards from "../components/layouts/ServiceCards";
@@ -17,7 +16,7 @@ const Home = () => {
     <>
       <section
         className={`max-2xl:pb-24 h-screen flex items-center relative bg-center bg-cover bg-no-repeat pt-16`}
-        style={{ backgroundImage: `url(${banner_home})` }}
+        style={{ backgroundImage: `url(${banners_home})` }}
       >
         <div className="container">
           <div className="flex flex-wrap -mx-[15px]">
@@ -41,7 +40,7 @@ const Home = () => {
           </div>
         </div>
         <img
-          src={banner_element_1}
+          src={banners_element_1}
           className="absolute right-0 z-[1] w-1/2 "
           alt=""
         />
@@ -67,7 +66,6 @@ const Home = () => {
       <WorkWithUs />
       <Testimonials />
       <Brands_2 />
-      <FooterForm />
     </>
   );
 };

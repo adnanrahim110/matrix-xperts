@@ -1,5 +1,5 @@
 import React from "react";
-import { bg_brands, industrie_icons, plus } from "../../assets";
+import { banners_brands, industrie_icons, plus } from "../../assets";
 import SecHeader from "../ui/SecHeader";
 import "./brands.css";
 
@@ -7,7 +7,7 @@ const Brands = () => {
   return (
     <section
       className="py-[60px] bg-cover bg-no-repeat bg-center"
-      style={{ backgroundImage: `url(${bg_brands})` }}
+      style={{ backgroundImage: `url(${banners_brands})` }}
     >
       <div className="container">
         <div className="flex flex-wrap -mx-[15px]">

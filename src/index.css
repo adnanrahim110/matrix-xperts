@@ -297,15 +297,21 @@
   }
 
   .btn_2.btn_white::before,
-  .btn_2.btn_2.btn_white::after,
+  .btn_2.btn_white::after,
   .btn_2.btn_black::before,
-  .btn_2.btn_2.btn_black::after {
+  .btn_2.btn_black::after,
+  .btn_2.btn_w2::before,
+  .btn_2.btn_w2::after {
     display: none;
   }
 
   .btn_2.btn_white {
     background: white;
     color: var(--color-gray-900);
+  }
+
+  .btn_2.btn_w2 {
+    border: 2px solid #fff;
   }
 
   .btn_2.btn_black {
@@ -391,6 +397,15 @@
   position: static;
   margin-top: -5px;
 }
+
+.servSlider .swiper-pagination-fraction,
+.servSlider .swiper-pagination-custom,
+.servSlider .swiper-horizontal>.swiper-pagination-bullets,
+.servSlider .swiper-pagination-bullets.swiper-pagination-horizontal {
+  margin-top: 20px;
+}
+
+
 
 .swiper-pagination-bullet-active {
   background: var(--color-primary);

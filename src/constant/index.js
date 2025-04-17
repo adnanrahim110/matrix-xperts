@@ -124,36 +124,116 @@ export const navigation = [
   },
 ];
 
-export const quickLinks = [
+export const footerNavigation = [
   {
-    title: "Home",
-    url: "/",
+    title: "Quick Links",
+    children: [
+      {
+        title: "Home",
+        url: "/",
+      },
+      {
+        title: "About",
+        url: "/about",
+      },
+      {
+        title: "Packages",
+        url: "/packages",
+      },
+      {
+        title: "Combo Packages",
+        url: "/combo-packages",
+      },
+      {
+        title: "Portfolio",
+        url: "/portfolio",
+      },
+      {
+        title: "Reviews",
+        url: "/reviews",
+      },
+      {
+        title: "Sitemap",
+        url: "/sitemap",
+      }
+    ]
   },
   {
-    title: "About",
-    url: "/about",
+    title: "Services",
+    children: [
+      {
+        title: "Website Development",
+        url: "/website-development",
+      },
+      {
+        title: "Logo Design",
+        url: "/logo-design",
+      },
+      {
+        title: "Ecommerce Solutions",
+        url: "/ecommerce-solutions",
+      },
+      {
+        title: "Animation",
+        url: "/animation",
+      },
+      {
+        title: "Illustration",
+        url: "/illustration",
+      },
+      {
+        title: "NFT Design",
+        url: "/nft-design",
+      },
+      {
+        title: "Marketing Collateral",
+        url: "/marketing-collateral",
+      },
+    ]
   },
   {
-    title: "Packages",
-    url: "/packages",
+    title: "More Services",
+    children: [
+      {
+        title: "Mobile Apps",
+        url: "/mobile-apps",
+      },
+      {
+        title: "SEO Services",
+        url: "/seo-services",
+      },
+      {
+        title: "SMM",
+        url: "/social-media-marketing",
+      },
+      {
+        title: "Creative Copywriting",
+        url: "/creative-copywriting",
+      },
+    ]
   },
   {
-    title: "Combo Packages",
-    url: "/combo-packages",
-  },
-  {
-    title: "Portfolio",
-    url: "/portfolio",
-  },
-  {
-    title: "Reviews",
-    url: "/reviews",
-  },
-  {
-    title: "Sitemap",
-    url: "/sitemap",
+    title: "Get in Touch Now!",
+    children: [
+      {
+        title: "Sales: (855) 535 - 9320",
+        url: "tel:8555359320",
+      },
+      {
+        title: "Support: (855) 535 - 9320",
+        url: "tel:8555359320",
+      },
+      {
+        title: "info@logoaspire.com",
+        url: "mailto:info@logoaspire.com",
+      },
+      {
+        title: "5670 Wilshire Blvd, Los Angeles, CA 90036, United States",
+        url: false
+      }
+    ]
   }
-];
+]
 
 export const categories = [
   {
@@ -750,6 +830,101 @@ export const pricingData = [
   },
 ]
 
+export const comboPackages = [
+  {
+    title: "Logo Plus Package",
+    price: 238.00,
+    discounted_Price: 119.00,
+    text: "Suitable for potential super-startups and brand revamps for companies.",
+    features: [
+      "12 Original Logo Concepts",
+      "4 Dedicated Logo Designer (Industry Specific)",
+      "Unlimited Revisions",
+      "Stationery Design (Business Card, Letterhead, Envelope)",
+      "Email Signature Design",
+      "With Grey Scale Format",
+      "Free Icon Design",
+      "Formats: JPEG, PSD, EPS, AI, PNG, TIFF, SVG",
+      "24 - 48 Hours Turn around time",
+    ],
+    more_features: [
+      "100% Satisfaction",
+      "100% Ownership Rights",
+      "Money Back Guarantee",
+      "Dedicated Account Manager"
+    ]
+  },
+  {
+    title: "Logo Plus Package",
+    price: 238.00,
+    discounted_Price: 119.00,
+    text: "Suitable for potential super-startups and brand revamps for companies.",
+    features: [
+      "12 Original Logo Concepts",
+      "4 Dedicated Logo Designer (Industry Specific)",
+      "Unlimited Revisions",
+      "Stationery Design (Business Card, Letterhead, Envelope)",
+      "Email Signature Design",
+      "With Grey Scale Format",
+      "Free Icon Design",
+      "Formats: JPEG, PSD, EPS, AI, PNG, TIFF, SVG",
+      "24 - 48 Hours Turn around time",
+    ],
+    more_features: [
+      "100% Satisfaction",
+      "100% Ownership Rights",
+      "Money Back Guarantee",
+      "Dedicated Account Manager"
+    ]
+  },
+  {
+    title: "Logo Plus Package",
+    price: 238.00,
+    discounted_Price: 119.00,
+    text: "Suitable for potential super-startups and brand revamps for companies.",
+    features: [
+      "12 Original Logo Concepts",
+      "4 Dedicated Logo Designer (Industry Specific)",
+      "Unlimited Revisions",
+      "Stationery Design (Business Card, Letterhead, Envelope)",
+      "Email Signature Design",
+      "With Grey Scale Format",
+      "Free Icon Design",
+      "Formats: JPEG, PSD, EPS, AI, PNG, TIFF, SVG",
+      "24 - 48 Hours Turn around time",
+    ],
+    more_features: [
+      "100% Satisfaction",
+      "100% Ownership Rights",
+      "Money Back Guarantee",
+      "Dedicated Account Manager"
+    ]
+  },
+  {
+    title: "Logo Plus Package",
+    price: 238.00,
+    discounted_Price: 119.00,
+    text: "Suitable for potential super-startups and brand revamps for companies.",
+    features: [
+      "12 Original Logo Concepts",
+      "4 Dedicated Logo Designer (Industry Specific)",
+      "Unlimited Revisions",
+      "Stationery Design (Business Card, Letterhead, Envelope)",
+      "Email Signature Design",
+      "With Grey Scale Format",
+      "Free Icon Design",
+      "Formats: JPEG, PSD, EPS, AI, PNG, TIFF, SVG",
+      "24 - 48 Hours Turn around time",
+    ],
+    more_features: [
+      "100% Satisfaction",
+      "100% Ownership Rights",
+      "Money Back Guarantee",
+      "Dedicated Account Manager"
+    ]
+  },
+]
+
 export const allInOnePkg = {
   subtitle: "All in one",
   title: "COMBO",
@@ -808,4 +983,61 @@ export const testimonials = [
     stars: 5,
     comment: "A loud shout out to the team at Logo Aspire. My mobile application is running smoothly and all my clients are satisfied. This was not possible without their effort."
   }
+]
+
+export const detailedTestimonials = [
+  {
+    name: "Trina Gill",
+    heading: "Outstanding Service",
+    text: "Overall Rating from 49 Users",
+    title: "Senior Publisher",
+    img: reviews_1,
+    stars: 5,
+    comment: "Logo Aspire is a life savior. My business was all set to operate but my website crashed at the last moment. Thanks to the team at Logo Aspire."
+  },
+  {
+    name: "Tyrone Turner",
+    heading: "Outstanding Service",
+    text: "Overall Rating from 49 Users",
+    title: "Editor",
+    img: reviews_2,
+    stars: 5,
+    comment: "Worth sharing my experience with Logo Aspire. The team has all the expertise to design a business logo and they also guided me through the process."
+  },
+  {
+    name: "Milton Sims",
+    heading: "Outstanding Service",
+    text: "Overall Rating from 49 Users",
+    title: "Brand Manager",
+    img: reviews_3,
+    stars: 5,
+    comment: "Highly appreciated their work and the level of commitment. They worked according to our business needs and their work was flawless."
+  },
+  {
+    name: "Belle Boyd",
+    heading: "Outstanding Service",
+    text: "Overall Rating from 49 Users",
+    title: "Senior Content Creator",
+    img: reviews_4,
+    stars: 5,
+    comment: "A loud shout out to the team at Logo Aspire. My mobile application is running smoothly and all my clients are satisfied. This was not possible without their effort."
+  },
+  {
+    name: "Trina Gill",
+    heading: "Outstanding Service",
+    text: "Overall Rating from 49 Users",
+    title: "Senior Publisher",
+    img: reviews_1,
+    stars: 5,
+    comment: "Logo Aspire is a life savior. My business was all set to operate but my website crashed at the last moment. Thanks to the team at Logo Aspire."
+  },
+  {
+    name: "Tyrone Turner",
+    heading: "Outstanding Service",
+    text: "Overall Rating from 49 Users",
+    title: "Editor",
+    img: reviews_2,
+    stars: 5,
+    comment: "Worth sharing my experience with Logo Aspire. The team has all the expertise to design a business logo and they also guided me through the process."
+  },
 ]
